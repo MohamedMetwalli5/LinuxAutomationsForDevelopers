@@ -1,4 +1,4 @@
-#Linux Automations For Developers
+# Linux Automations For Developers
 * To run this script
   * Make sure you are in the same directory of the file
   * Type `bash LinuxAutomationsForDevelopers.sh`, then press `Enter ↵`
