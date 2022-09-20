@@ -6,6 +6,7 @@ This is a simple bash script for automation to help developers using Linux. It i
 ## How To Run
 * To run this script
   * Make sure to navigate to be at the same directory of the file
+  * Type `chmod +x LinuxAutomationsForDevelopers.sh` in the terminal window, then press `Enter ↵`
   * Type `bash LinuxAutomationsForDevelopers.sh` in the terminal window, then press `Enter ↵`
   * You will be asked to insert your username and password to be used later by some of the commands
 
