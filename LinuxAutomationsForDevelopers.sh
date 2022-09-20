@@ -1,14 +1,22 @@
 #!/bin/bash
 
 echo "Enter the user name : "
-read UserName
+IFS="" read -s UserName  </dev/tty # OR < /proc/$$/fd/0
+
 echo "Enter the user password : "
-read UserPassword
+IFS="" read -s UserPassword  </dev/tty # OR < /proc/$$/fd/0
+
 
 #To update the local package index with the latest changes made in the repositories
 sudo apt update
-#expect "[sudo] password for $UserName\r"
-#send -- "$UserPassword\r"
+
+/usr/bin/expect <<EOD
+expect "[sudo] password for $UserName\r"
+send -- "$UserPassword\r"
+interact
+EOD
+echo "you're out"
+
 
 # To upgrade your system, first, update your package index as outlined above, and then use:
 sudo apt upgrade
