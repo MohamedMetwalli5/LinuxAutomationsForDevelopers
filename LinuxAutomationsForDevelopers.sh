@@ -38,4 +38,13 @@ sudo apt install vlc
 #Installing z Shell (which is is a Unix shell that can be used as an interactive login shell and as a command interpreter for shell scripting)
 sudo apt-get install zsh
 
+#Installing gimp which is an alternative to Adobe Photoshop on Linux & some optional extensions
+sudo apt install gimp
+sudo apt install gimp-plugin-registry
+
+#Installing Lollypop Music Player
+sudo add-apt-repository ppa:gnumdk/lollypop
+sudo apt update
+sudo apt install lollypop
+
 echo "It Is Done!"
